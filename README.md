@@ -113,4 +113,3 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 🔗 [GitHub](https://github.com/CodeTitan-ux) | [LinkedIn](https://linkedin.com/in/aman-jambhulkar-101233237/) | [Instagram](https://www.instagram.com/aman_jambhulkar8904/)
 
 ---
-<p align="center">Made with ❤️ for the Developer Community</p>
