@@ -93,20 +93,17 @@ This project is optimized for deployment on **Vercel** or **Netlify**.
 3. Use the following build settings:
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
+     
+## 📸 Screenshots 
 
-## 🤝 Contributing
-
-Contributions are welcome! If you have suggestions for new features or improvements, feel free to fork the repo and create a pull request.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
+<img width="1919" height="966" alt="Screenshot 2026-03-26 123803" src="https://github.com/user-attachments/assets/c183da79-0679-41b9-8065-1bc9e5069f1f" />
+<img width="1919" height="922" alt="Screenshot 2026-03-26 123818" src="https://github.com/user-attachments/assets/c2cf4864-cdb5-4937-8f67-cbdb2d0c65ec" />
+<img width="1918" height="921" alt="Screenshot 2026-03-26 123831" src="https://github.com/user-attachments/assets/763c2a6b-e7c2-42a3-a623-7953d12c4e4d" />
+<img width="1915" height="928" alt="Screenshot 2026-03-26 123849" src="https://github.com/user-attachments/assets/df49e663-d470-4151-b3f7-1e5b0bb9ea18" />
+<img width="1918" height="924" alt="Screenshot 2026-03-26 123857" src="https://github.com/user-attachments/assets/25a7b1ca-f20e-49a5-b7f1-7a9c3ae78f20" />
+<img width="1919" height="929" alt="Screenshot 2026-03-26 123904" src="https://github.com/user-attachments/assets/419a2742-81a5-4eee-ac91-b0eb934b13a6" />
+<img width="1919" height="914" alt="Screenshot 2026-03-26 123913" src="https://github.com/user-attachments/assets/48157d90-982b-4b8c-98f6-14bc94bdb621" />
+<img width="1915" height="919" alt="Screenshot 2026-03-26 123941" src="https://github.com/user-attachments/assets/1d3d84a3-5e4b-4f1e-8096-5efc183ef7c2" />
 
 ## 📬 Contact Information
 
