@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight, FaDownload } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -22,10 +22,20 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight mb-6 leading-[1.1]"
+            className="text-5xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight mb-4 leading-[1.1]"
           >
             Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Aman Jambhulkar</span>
           </motion.h1>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-2xl md:text-3xl font-bold text-gray-200 mb-6"
+          >
+            Full-Stack Developer <span className="text-primary opacity-70 mx-1.5">•</span> Java & React
+          </motion.h2>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -34,7 +44,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-400 max-w-xl mb-10 leading-relaxed"
           >
-            Focused on developing secure, scalable applications with performance and user experience at the core.
+            Crafting fast, scalable, and user-focused web applications.
           </motion.p>
 
           <motion.div 
@@ -42,13 +52,25 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto"
+            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <a href="#projects" className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-blue-600 transition-all flex items-center justify-center gap-2 group shadow-lg shadow-primary/25">
-              View My Work
-              <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <a href="#projects" className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-blue-600 transition-all flex items-center justify-center gap-2 group shadow-lg shadow-primary/25 whitespace-nowrap">
+              View Projects
+              <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </a>
-            <div className="flex gap-4 items-center justify-center sm:justify-start">
+            
+            <a 
+              href="/resume.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Resume in a new tab"
+              className="px-8 py-4 bg-white/5 border border-white/10 text-white rounded-full font-semibold hover:bg-white/10 transition-all flex items-center justify-center gap-2 group shadow-xl backdrop-blur-md whitespace-nowrap"
+            >
+              Download Resume
+              <FaDownload className="w-4 h-4 group-hover:translate-y-0.5 transition-transform flex-shrink-0" />
+            </a>
+
+            <div className="flex gap-3 items-center justify-center sm:justify-start">
               <SocialLink href={import.meta.env.VITE_GITHUB_URL || "#"} icon={<FaGithub className="w-5 h-5" />} />
               <SocialLink 
                 href={
@@ -92,7 +114,7 @@ function Typewriter() {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ['Creative Developer', 'AI Enthusiast'];
+  const words = ['Software Developer','Coding Enthusiast','Open to Opportunities','Available for Hire'];
 
   useEffect(() => {
     let timer = setTimeout(() => {

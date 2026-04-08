@@ -8,7 +8,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['About', 'Experience', 'Projects', 'Certifications', 'Contact'];
+      const sections = ['About', 'Education', 'Experience', 'Projects', 'Certifications', 'Contact'];
       // Trigger the active state when the section reaches the top 1/3rd of the screen
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
@@ -108,8 +108,8 @@ export default function Navbar() {
             <span className="font-mono">{displayText}</span>
           )}
         </motion.a>
-        <div className="hidden md:flex gap-6 lg:gap-8">
-          {['About', 'Experience', 'Projects', 'Certifications', 'Contact'].map((item) => {
+        <div className="hidden md:flex ml-auto justify-end gap-4 lg:gap-6">
+          {['About', 'Education', 'Experience', 'Projects', 'Certifications', 'Contact'].map((item) => {
             const isActive = activeSection === item;
             return (
               <a 

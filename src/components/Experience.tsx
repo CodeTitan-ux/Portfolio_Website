@@ -6,13 +6,21 @@ const experiences = [
     role: "Software Development Intern",
     company: "Edunet Foundation",
     period: "Feb 2025 - Mar 2025",
-    description: "Developed responsive full-stack web applications using the MERN stack, designed RESTful APIs, and contributed to testing, debugging, and performance optimization.",
+    description: [
+      "Built Online Auction Platform using MERN stack",
+      "Designed RESTful APIs for backend services",
+      "Improved application performance through testing and debugging"
+    ],
   },
   {
     role: "AI & Python Intern",
     company: "TechSaksham",
     period: "Feb 2025 - Mar 2025",
-    description: "Built an AI-based resume screening system using Python, implementing data processing and evaluation logic while gaining hands-on experience in model development and testing.",
+    description: [
+      "Developed AI Resume Screening & Candidate Ranking System in Python",
+      "Implemented algorithms for candidate data extraction and evaluation",
+      "Enhanced model logic and testing for accurate ranking"
+    ],
   }
 ];
 
@@ -196,7 +204,14 @@ export default function Experience() {
                     <span className="hidden sm:inline">•</span>
                     <span>{exp.period}</span>
                   </div>
-                  <p className="text-gray-400 leading-relaxed max-w-2xl">{exp.description}</p>
+                  <ul className="space-y-2 text-gray-400 max-w-2xl">
+                    {exp.description.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2.5">
+                        <span className="text-primary mt-1.5 text-sm leading-none">•</span>
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </motion.div>
               ))}
             </div>

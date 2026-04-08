@@ -3,6 +3,7 @@ import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
@@ -29,6 +30,7 @@ function App() {
         <main>
           <Hero />
           <About />
+          <Education />
           <Experience />
           <Projects />
           <Certifications />

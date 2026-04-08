@@ -84,7 +84,12 @@ const fragmentShader = `
   }
 `;
 
-export default function NebulaParticleCloud() {
+interface NebulaProps {
+  isLowEnd?: boolean;
+  performanceTier?: number;
+}
+
+export default function NebulaParticleCloud({ isLowEnd, performanceTier }: NebulaProps) {
   const pointsRef = useRef<THREE.Points>(null);
   
   const targetRotation = useRef({ x: 0, y: 0 });
@@ -118,7 +123,12 @@ export default function NebulaParticleCloud() {
 
   // Algorithmically predefine the cosmic spatial clusters during mount
   const { positions, colors, scales } = useMemo(() => {
-    const count = 15000;
+    // Dynamic particle count based on performance tier
+    let count = 15000;
+    if (isLowEnd) count = 5000;
+    if (performanceTier === 1) count = 2000;
+    if (performanceTier === 0) count = 0; // Disable completely if no GPU support
+
     const pos = new Float32Array(count * 3);
     const col = new Float32Array(count * 3);
     const sca = new Float32Array(count);
@@ -211,6 +221,8 @@ export default function NebulaParticleCloud() {
        -2.0 
     );
   });
+
+  if (performanceTier === 0) return null;
 
   return (
     <group position={[2.5, 0.5, -2]} scale={1.2} onDoubleClick={handleDoubleClick}>

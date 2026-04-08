@@ -5,11 +5,11 @@ export default function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
   const [isPurple, setIsPurple] = useState(false);
   
-  // Use springs for smooth following
-  const cursorX = useSpring(0, { stiffness: 1000, damping: 50 });
-  const cursorY = useSpring(0, { stiffness: 1000, damping: 50 });
-  const cursorXOuter = useSpring(0, { stiffness: 300, damping: 40 });
-  const cursorYOuter = useSpring(0, { stiffness: 300, damping: 40 });
+  // Synchronized smooth tracking for both cursor layers natively eliminates lag mismatch
+  const cursorX = useSpring(0, { stiffness: 600, damping: 40 });
+  const cursorY = useSpring(0, { stiffness: 600, damping: 40 });
+  const cursorXOuter = useSpring(0, { stiffness: 600, damping: 40 });
+  const cursorYOuter = useSpring(0, { stiffness: 600, damping: 40 });
 
   useEffect(() => {
     const updateMousePosition = (e: MouseEvent) => {

@@ -2,9 +2,12 @@ import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-const SHAPE_COUNT = 60;
+interface ShapesProps {
+  isLowEnd?: boolean;
+}
 
-export default function FloatingShapes() {
+export default function FloatingShapes({ isLowEnd }: ShapesProps) {
+  const SHAPE_COUNT = isLowEnd ? 20 : 60;
   const solidMeshRef = useRef<THREE.InstancedMesh>(null);
   const wireMeshRef = useRef<THREE.InstancedMesh>(null);
   const groupRef = useRef<THREE.Group>(null);
