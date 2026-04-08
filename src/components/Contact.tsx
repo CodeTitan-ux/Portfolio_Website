@@ -57,10 +57,22 @@ export default function Contact() {
 
     setStatus('submitting');
 
+    // Check for missing environment variables safely
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.warn("Contact form: EmailJS configuration is missing. Ensure VITE_EMAILJS variables are set in Vercel.");
+      setStatus('error');
+      isSending.current = false;
+      return;
+    }
+
     try {
       const result = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
+        serviceId,
+        templateId,
         {
           from_name: sanitizeInput(formState.name),
           reply_to: sanitizeInput(formState.email),
