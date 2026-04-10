@@ -5,7 +5,7 @@ A stunning, interactive, and high-performance 3D portfolio website designed to s
 ---
 ## 🔗Live Demo : https://portfolio-website-six-wine-48.vercel.app/
 
-https://github.com/user-attachments/assets/599aea6b-f67e-45ee-ad12-21832efec73f
+
 
 ---
 
@@ -99,14 +99,15 @@ This project is optimized for deployment on **Vercel** or **Netlify**.
      
 ## 📸 Screenshots 
 
-<img width="1919" height="966" alt="Screenshot 2026-03-26 123803" src="https://github.com/user-attachments/assets/c183da79-0679-41b9-8065-1bc9e5069f1f" />
-<img width="1919" height="922" alt="Screenshot 2026-03-26 123818" src="https://github.com/user-attachments/assets/c2cf4864-cdb5-4937-8f67-cbdb2d0c65ec" />
-<img width="1918" height="921" alt="Screenshot 2026-03-26 123831" src="https://github.com/user-attachments/assets/763c2a6b-e7c2-42a3-a623-7953d12c4e4d" />
-<img width="1915" height="928" alt="Screenshot 2026-03-26 123849" src="https://github.com/user-attachments/assets/df49e663-d470-4151-b3f7-1e5b0bb9ea18" />
-<img width="1918" height="924" alt="Screenshot 2026-03-26 123857" src="https://github.com/user-attachments/assets/25a7b1ca-f20e-49a5-b7f1-7a9c3ae78f20" />
-<img width="1919" height="929" alt="Screenshot 2026-03-26 123904" src="https://github.com/user-attachments/assets/419a2742-81a5-4eee-ac91-b0eb934b13a6" />
-<img width="1919" height="914" alt="Screenshot 2026-03-26 123913" src="https://github.com/user-attachments/assets/48157d90-982b-4b8c-98f6-14bc94bdb621" />
-<img width="1915" height="919" alt="Screenshot 2026-03-26 123941" src="https://github.com/user-attachments/assets/1d3d84a3-5e4b-4f1e-8096-5efc183ef7c2" />
+<img width="1902" height="921" alt="Screenshot 2026-04-10 161400" src="https://github.com/user-attachments/assets/8b084bba-d782-4407-bff5-5fcf93bafacc" />
+<img width="1903" height="913" alt="Screenshot 2026-04-10 162024" src="https://github.com/user-attachments/assets/d9ca68ad-a59c-42d8-82cf-2ab9feb65da9" />
+<img width="1904" height="907" alt="Screenshot 2026-04-10 162039" src="https://github.com/user-attachments/assets/d488f515-3b6b-4a1c-94e5-a065edf76fd0" />
+<img width="1911" height="919" alt="Screenshot 2026-04-10 162052" src="https://github.com/user-attachments/assets/8ee7d3db-773b-446b-95bb-2863a8ce73d1" />
+<img width="1911" height="901" alt="Screenshot 2026-04-10 162059" src="https://github.com/user-attachments/assets/a7c34f7d-3411-4ee1-9e29-a3768dfee74a" />
+<img width="1906" height="910" alt="Screenshot 2026-04-10 162115" src="https://github.com/user-attachments/assets/3174b944-4260-4006-9eb8-fd7b6f554788" />
+<img width="1910" height="921" alt="Screenshot 2026-04-10 162124" src="https://github.com/user-attachments/assets/dbb7b625-f8a5-4178-a86d-49cf561ff9fe" />
+<img width="1913" height="902" alt="Screenshot 2026-04-10 162134" src="https://github.com/user-attachments/assets/fad44f25-c402-4cc0-ad52-da570b704a6e" />
+<img width="1917" height="963" alt="Screenshot 2026-04-10 162153" src="https://github.com/user-attachments/assets/7c89fe59-1b61-42fd-aba2-8fec31f48d5f" />
 
 ## 📬 Contact Information
 
