@@ -25,6 +25,9 @@ Vercel is the easiest way to deploy Vite projects.
      - `VITE_PROJECT_2_DEMO`
      - `VITE_PROJECT_3_GITHUB`
      - `VITE_PROJECT_3_DEMO`
+     - `VITE_EMAILJS_SERVICE_ID`
+     - `VITE_EMAILJS_TEMPLATE_ID`
+     - `VITE_EMAILJS_PUBLIC_KEY`
 
 3. **Build Settings**:
    - Vercel should automatically detect Vite.
